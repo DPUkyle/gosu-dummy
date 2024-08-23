@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id "org.gosu-lang.gosu" version "8.1.1-alpha2"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.gosu-lang.gosu:gosu-core-api:1.17.8'
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
