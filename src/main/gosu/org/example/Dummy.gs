@@ -6,6 +6,9 @@ class Dummy {
         new Dummy().doIt()
     }
 
+  /**
+   * Print some amazing text
+   */
     function doIt() {
       var list = { "one", "two", "three" } // Creates a java.lang.List<String>
       var ref : String = "intentionally create inspection GS-002"

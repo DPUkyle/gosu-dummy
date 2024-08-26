@@ -10,7 +10,7 @@ class DummyTest {
     var d = new Dummy()
     d.doIt()
 
-    //Assertions.fail("on purpose")
+//    Assertions.fail("on purpose")
   }
 
 }
