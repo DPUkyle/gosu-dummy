@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'idea'
     id "org.gosu-lang.gosu" version "8.1.1-alpha2"
 }
 
@@ -19,4 +20,13 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+//TODO this should be part of the org.gosu-lang.gosu plugin
+//  o.g.g should react to the idea plugin and do these steps
+idea {
+    module {
+        sourceDirs += sourceSets.main.gosu.srcDirs
+        testSources.from(sourceSets.test.gosu.srcDirs)
+    }
 }
