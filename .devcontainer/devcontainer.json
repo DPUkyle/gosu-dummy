@@ -1,0 +1,5 @@
+{
+  "image":"mcr.microsoft.com/openjdk/jdk:17-ubuntu",
+
+  "onCreateCommand": "apt-get -y update; apt-get -y install curl; apt-get -y install git"
+}
