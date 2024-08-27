@@ -1,5 +1,26 @@
 {
-  "image":"mcr.microsoft.com/openjdk/jdk:17-ubuntu",
+  "image":"mcr.microsoft.com/devcontainers/java:17",
 
-  "onCreateCommand": "apt-get -y update; apt-get -y install curl; apt-get -y install git"
+
+// install utilities via apt and sdkman!
+  "features": {
+    // "ghcr.io/devcontainers/features/common-utils:2.5.1": {
+    //   "installZsh": false,
+    //   "installOhMyZsh": false,
+    //   "installOhMyZshConfig": false
+    // },
+    // "ghcr.io/rocker-org/devcontainer-features/apt-packages:1.0.2": {
+    //   "packages": "ca-certificates"
+    // }
+  "ghcr.io/devcontainers/features/java:1.6.0": {
+    "version": "17.0.12-tem"
+  }
+
+
+  //   "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+  //       "packages": "ca-certificates"
+  //   },
+  //   "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
+  }
+
 }
