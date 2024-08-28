@@ -1,26 +1,18 @@
 {
   "image":"mcr.microsoft.com/devcontainers/java:17",
 
-
-// install utilities via apt and sdkman!
+// install Coretto via sdkman!
   "features": {
-    // "ghcr.io/devcontainers/features/common-utils:2.5.1": {
-    //   "installZsh": false,
-    //   "installOhMyZsh": false,
-    //   "installOhMyZshConfig": false
-    // },
-    // "ghcr.io/rocker-org/devcontainer-features/apt-packages:1.0.2": {
-    //   "packages": "ca-certificates"
-    // }
-  "ghcr.io/devcontainers/features/java:1.6.0": {
-    "version": "17.0.12-tem"
+    "ghcr.io/devcontainers/features/java:1.6.0": {
+      "version": "17.0.12-amzn"
+    }
+  },
+
+// maybe install OS Gosu plugin 9.0.0 ?
+  "customizations" : {
+    "jetbrains" : {
+      "backend": "IntelliJ",
+      "plugins" : ["gw.ij.gosu"]
+    }  
   }
-
-
-  //   "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-  //       "packages": "ca-certificates"
-  //   },
-  //   "ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {}
-  }
-
 }
